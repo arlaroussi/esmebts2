@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -5,6 +6,8 @@
  */
 package introclasse.bts2;
 
+import java.lang.*;
+import java.util.*;
 /**
  *
  * @author rlaroussi
@@ -31,6 +34,18 @@ public class Traitement {
        else
            System.out.println(nomSherif + " est moins fatigué que " + nomHLL);
        
-    }
+       
+       //Création d'une liste
+       
+       ArrayList liste = new ArrayList<Personnage>();
+       
+       liste.add(sherif);
+       liste.add(horsLaLoi);
+       
+       for (Object pers : liste) {
+            System.out.println(pers.toString());
+       }
+       
+}
 }
    
